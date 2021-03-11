@@ -1,0 +1,55 @@
+{
+    "mainParams": {
+        "applicationPort": 8090,
+        "checkAuthHeader": true,
+        "logiranBezAktivnosti": 3
+    },
+    "ukljuciConsoleLog": {
+        "ukljuciConsoleLog": true,
+        "_comment_ukljuciConsoleLog": ""
+    },
+    "codes": {
+        "alpha": "1ddc09a2860d4b001987a6b21276a86343d2983442214c6c583ab01a",
+        "beta": "448942efd74d41000dc5e2a64333eb613fd796600920486f183fe05aed89cf791616b8b39d7a7958843471896a",
+        "delta": "488d42b6800a184b1ec4e0"
+    },
+    "appLogParams": {
+        "apiCallLog": false,
+        "_comment_apiCallLog": "true znaci da ce morgan zapisivati podatke o svakom API pozivu u log"
+    },
+    "databaseParams": {
+        "productionDatabaseServer": "lamasqlrazvoj.lama.hr",
+        "productionDatabaseServerInstanceName": "MSSQLSERVER",
+        "productionDatabaseName": "FMS_Razvoj",
+        "productionUserName": "1984",
+        "productionPassword": "0d8947ad05cbd41ddc9f",
+        "testDatabaseServer": "lamasqlrazvoj.lama.hr",
+        "testDatabaseServerInstanceName": "MSSQLSERVER",
+        "testDatabaseName": "FMS_Razvoj",
+        "testUserName": "1984",
+        "testPassword": "0d8947ad05cbd41ddc9f",
+        "_comment_database4Servisi": "Može biti produkcijska - Produkcijska baza podataka ili testna - Produkcijska baza podataka baza podataka",
+        "database4Servisi": "Produkcijska baza podataka"
+    },
+    "directoryParams": {
+        "uploadPath": "\\dist\\uploads\\",
+        "uploadPathTest": "\\dist\\uploads\\test\\",
+        "nodeSrv": "\\dist\\",
+        "tempFilesPath": "\\dist\\uploads\\tempFiles\\",
+        "_comment_uploadPath": "Putanja do uploads direktorija",
+        "_comment_uploadPathTest": "Putanja do test uploads direktorija",
+        "_comment_nodeSrv": "potreban aposlutni path za dohvacanje pdfa (NoFile.pdf i NoFileVersion.pdf) sa servera",
+        "_comment_tempFilesPath": ""
+    },
+    "userLoginConfig": {    
+        "checkAuthHeader": false, 
+        "logiranBezAktivnosti": 3
+    },
+    "cronJobConfigs": {
+        "mailPolling": {
+            "mailPollingOnOff": 0,
+            "mailPollingInterval": "* * * * *",
+            "_comment_mailPollingOnOff": "1 = provjera maila svakih mailPollingInterval sekundi 0 = nema provjere maila"
+        }
+    }
+}

@@ -1,0 +1,76 @@
+{
+    "mainParams": {
+        "applicationPort": 8090,
+        "checkAuthHeader": false,
+        "logiranBezAktivnosti": 3
+    },
+    "ukljuciConsoleLog": {
+        "_comment_ukljuciConsoleLog": "",
+        "ukljuciConsoleLog": true,
+        "ukljuciStackTrace": true
+    },
+    "codes": {
+        "alpha": "1ddc09a2860d4b001987a6b21276a86343d2983442214c6c583ab01a",
+        "beta": "448942efd74d41000dc5e2a64333eb613fd796600920486f183fe05aed89cf791616b8b39d7a7958843471896a",
+        "delta": "488d42b6800a184b1ec4e0"
+    },
+    "appLogParams": {
+        "_comment_apiCallLog": "true znaci da ce morgan zapisivati podatke o svakom API pozivu u log",
+        "apiCallLog": false
+    },
+    "databaseParams": {
+        "productionDatabaseServer": "",
+        "productionDatabaseServerInstanceName": "",
+        "productionDatabaseName": "",
+        "productionUserName": "",
+        "productionPassword": "",
+        "testDatabaseServer": "",
+        "testDatabaseServerInstanceName": "",
+        "testDatabaseName": "",
+        "testUserName": "",
+        "testPassword": "",
+        "_comment_database4Servisi": "",
+        "database4Servisi": ""
+    },
+    "directoryParams": {
+        "_comment_uploadPath": "Putanja do uploads direktorija",
+        "uploadPath": "\\dist\\uploads\\",
+        "_comment_uploadPathTest": "Putanja do test uploads direktorija",
+        "uploadPathTest": "\\dist\\uploads\\test\\",
+        "_comment_nodeSrv": "potreban aposlutni path za dohvacanje pdfa (NoFile.pdf i NoFileVersion.pdf) sa servera",
+        "nodeSrv": "\\dist\\",
+        "_comment_tempFilesPath": "",
+        "tempFilesPath": "\\dist\\uploads\\tempFiles\\"
+    },
+    "userLoginConfig": {    
+        "checkAuthHeader": true, 
+        "logiranBezAktivnosti": 3
+    },
+    "cronJobConfigs": {
+        "mailPolling": {
+            "_comment_mailPollingOnOff": "1 = provjera maila svakih mailPollingInterval sekundi / 0 = nema provjere maila",
+            "mailPollingOnOff": 0,
+            "mailPollingInterval": "* * * * *"
+        }
+    },
+    "ISVUconfig": {
+        "_comment_ISVUsinkOnOff": "true = isvu sinkronizacija ukljucena / false = isvu sinkronizacija iskljucena",
+        "ISVUsinkOnOff": true,
+        "ISVUOznakaFakulteta": "63",
+        "PrefixISVUApi": "https://www.isvu.hr/apiproba/vu/",
+        "ISVUUsername": "eduplan.mfs",
+        "ISVUPassword": "ijog151esef148",
+        "AuthorizationHeader": "Basic",
+        "DefaultRequestHeader": "application/hal+json",
+        "ISVUUserNameTest": "eduplan.mfs",
+        "ISVUPasswordTest": "ijog151esef148"
+    },
+    "jwtConfig": {
+        "_comment_decryptKeys": "Only works on key value pairs",
+        "decryptKeys": ["jwtSecret", "expiresIn", "algorithm"],
+        "jwtSecret": "5fdc57be5092871cc1cb280af9d1e0ece076c8c8049d72928f344b133b3ddf22cf082af5",
+        "acceptableSecrets": ["0fdd06bc55c08248c1cd2659fbd1e0e8e42bc8c8519f2d928b6619166d688c73955b78fd"],
+        "expiresIn": "5d81",
+        "algorithm": "22b607ec56"
+    }
+}
