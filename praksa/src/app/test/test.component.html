@@ -1,0 +1,27 @@
+<ng-container *ngIf="data?.akademskeGod; else loader">
+    <div style="padding: 0.5rem; width: 75%; margin: 0 auto;">
+        <div style="padding-top: 1rem;">
+            <p-card header="Linkovi">
+             <div style="padding: 0.25rem;" *ngFor="let item of data.linkovi">
+                 <p-card  styleClass="innerCard">
+                     {{item}}
+                 </p-card>
+             </div>
+            </p-card>
+         </div>
+        <div *ngFor="let item of data.izmjeneNastProg">
+            <app-izmjene-nast-prog [label]="item.label" [link]="item.link"></app-izmjene-nast-prog>
+        </div>
+        <div *ngFor="let item of data.izmjeneNastProgZaDan">
+            <app-izmjene-nast-prog [label]="item.label" [link]="item.link"></app-izmjene-nast-prog>
+        </div>
+        
+        <div *ngFor="let item of data.akademskeGod">
+            <app-akademska-godina [akademskaGodina]="item.akademskaGodina" [links]="item.links"></app-akademska-godina>
+        </div>
+    </div>
+</ng-container>
+
+<ng-template #loader>
+    <div>loading...</div>
+</ng-template>

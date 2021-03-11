@@ -1,0 +1,8 @@
+:host ::ng-deep p-card {
+    word-break: break-word;
+    
+}
+
+:host ::ng-deep .innerCard {
+    background-color: #333;
+}

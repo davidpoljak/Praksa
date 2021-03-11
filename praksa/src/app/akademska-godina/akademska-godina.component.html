@@ -1,0 +1,15 @@
+<div style="padding: 0.25rem;">
+    <p-card [header]="akademskaGodina">
+        
+        <div style="padding: 0.25rem;" *ngFor="let item of links">
+            <p-card styleClass="innerCard">
+                <ng-template pTemplate="header">
+                    <div style="font-size: 1.25em; padding: 0.5rem 1rem;">{{item.label}}</div>
+                </ng-template>
+                <div style="padding: 0.25rem;">
+                    {{item.link}}
+                </div>
+            </p-card>
+        </div>
+    </p-card>
+</div>
